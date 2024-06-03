@@ -8,11 +8,13 @@ import { FormsModule } from "@angular/forms";
     imports: [
         BrowserModule,
         FormsModule,
+        HeroesComponent
     ],
     declarations: [
         AppComponent,
-        HeroesComponent
+        //HeroesComponent
     ],
+    providers: [],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
