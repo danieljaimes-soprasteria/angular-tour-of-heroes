@@ -11,7 +11,7 @@ describe("MessagesComponent", () => {
     TestBed.configureTestingModule({
       imports: [HttpClientTestingModule],
       declarations: [MessagesComponent],
-    }).compileComponents();
+    });
 
     fixture = TestBed.createComponent(MessagesComponent);
     component = fixture.componentInstance;

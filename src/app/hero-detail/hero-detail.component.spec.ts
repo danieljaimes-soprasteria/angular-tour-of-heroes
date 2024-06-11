@@ -11,7 +11,6 @@ describe("HeroDetailComponent", () => {
   let component: HeroDetailComponent;
   let fixture: ComponentFixture<HeroDetailComponent>;
 
-  const fakeActivatedRoute = {} as ActivatedRoute;
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [HttpClientTestingModule],
@@ -52,7 +51,9 @@ describe("HeroDetailComponent", () => {
   });
 
   it("should have goBack function", () => {
-    expect(component.goBack).toBeTruthy();
+    let goBackSpyOn = spyOn(component, "goBack");
+    expect(component.goBack).toBeDefined();
+    
   });
 
   it("should have save function", () => {
